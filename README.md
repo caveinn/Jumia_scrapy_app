@@ -1,2 +1,2 @@
 # First_scrapy_app
-An app from following scrappy documentation tutorial
+An app to scrape date from jumia to get the discounted products
