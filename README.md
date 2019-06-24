@@ -1,4 +1,4 @@
-# First_scrapy_app
+# Jumia_scrapy_app
 scrape data from jumia to get the discounted products
 
 
