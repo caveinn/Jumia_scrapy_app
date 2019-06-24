@@ -1,4 +1,4 @@
 # First_scrapy_app
-crape date from jumia to get the discounted products
+scrape data from jumia to get the discounted products
 
 
