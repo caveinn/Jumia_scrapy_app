@@ -1,4 +1,4 @@
 # First_scrapy_app
-Implementing a scrapper for jumia kenya online store
+crape date from jumia to get the discounted products
 
 
