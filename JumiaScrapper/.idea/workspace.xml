@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea6cb6a2-f271-42cb-8b49-4bab4e278fe7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tutorial/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -32,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/tutorial/crawling.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -188,7 +187,7 @@
     <entry file="file://$PROJECT_DIR$/tutorial/crawling.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>

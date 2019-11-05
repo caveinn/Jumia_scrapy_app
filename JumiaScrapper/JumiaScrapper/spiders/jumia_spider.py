@@ -11,7 +11,7 @@ class QuotesSpider(scrapy.Spider):
             yield scrapy.Request(url=url, callback=self.parse)
 
     def parse(self, response):
-        navbar = response.css('.main-category')
+        navbar = response.css('.itm')
         categories = []
         for item in navbar:
             category = {
@@ -19,6 +19,7 @@ class QuotesSpider(scrapy.Spider):
                 'link': item.css('::attr(href)').get()
             }
             categories.append(category)
+        print(categories, "\n"*20)
         for category in categories:
             try:
                 yield response.follow(category['link'], callback=self.parse_products)
@@ -38,6 +39,8 @@ class QuotesSpider(scrapy.Spider):
                     if im.find('http') != -1:
                         image = im
                 discount = int(old_price)-int(new_price)
+                discount_percentage = int(price[0].strip('%')) * -1 if price[0] else 0
+                print(discount_percentage, '\n'*5)
                 if discount:
                     yield{
                            'name': product.css('h2 .name::text').get(),
@@ -45,10 +48,11 @@ class QuotesSpider(scrapy.Spider):
                             'new_price': new_price,
                             'image': image,
                             'link': link,
-                            'discount': discount
+                            'discount': discount,
+                            'discount_percentage': discount_percentage
                     }
             except Exception as e:
-                print(e,'\n\n\n\n\n\n\n\n\n\n')
+                print(e,"--error--"*5)
                 continue
         next_page = response.css('.pagination a[title="Next"] ::attr(href)').get()
         if next_page:
